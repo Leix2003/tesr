@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbe7e7;
+    font-family: Arial, sans-serif;
+}
+
+#love-message {
+    font-size: 2rem;
+    color: #ff006e;
+    display: none;
+    text-align: center;
+}
+
+#button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#button:hover {
+    background-color: #ff3f5e;
+}
+
+.hearts {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #ff006e;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -150%) scale(0.5); opacity: 0; }
+}
